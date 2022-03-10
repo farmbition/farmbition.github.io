@@ -9,7 +9,7 @@
   <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
     {% include header.html %}
-    {% if page.image.src != '' %}
+    {% if page.image %}
     <div class="single-featured-image-header">
       <img width="2000" height="1200" src="{{ page.image.src }}" class="attachment-twentyseventeen-featured-image size-twentyseventeen-featured-image wp-post-image" alt="" loading="lazy"
         srcset="{{ page.image.2000w }} 2000w, {{ page.image.300w }} 300w, {{ page.image.768w }} 768w, {{ page.image.1024w }} 1024w" sizes="100vw" />

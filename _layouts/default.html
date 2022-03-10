@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js no-svg">
+<head>
+  {% include head.html %}
+</head>
+<body
+  class="page-template-default page page-id-64 wp-embed-responsive has-header-image page-two-column colors-light{{ page.class }}">
+  {% include svg.html %}
+  <div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    {% include header.html %}
+    {% if page.image.src != '' %}
+    <div class="single-featured-image-header">
+      <img width="2000" height="1200" src="{{ page.image.src }}" class="attachment-twentyseventeen-featured-image size-twentyseventeen-featured-image wp-post-image" alt="" loading="lazy"
+        srcset="{{ page.image.2000w }} 2000w, {{ page.image.300w }} 300w, {{ page.image.768w }} 768w, {{ page.image.1024w }} 1024w" sizes="100vw" />
+    </div>
+    {% endif %}
+    <div class="site-content-contain">
+      <div id="content" class="site-content">
+        <div id="primary" class="content-area">
+          <main id="main" class="site-main" role="main">
+            <article id="post-64" class="twentyseventeen-panel  post-64 page type-page status-publish hentry">
+              <div class="panel-content">
+                <div class="wrap">
+                  <header class="entry-header">
+                    <h2 class="entry-title">{{ page.title }}</h2>
+                  </header><!-- .entry-header -->
+                  <div class="entry-content">
+                    {{ content }}
+                  </div><!-- .entry-content -->
+                </div><!-- .wrap -->
+              </div><!-- .panel-content -->
+            </article><!-- #post-64 -->
+          </main><!-- #main -->
+        </div><!-- #primary -->
+      </div><!-- #content -->
+      {% include footer.html %}
+    </div><!-- .site-content-contain -->
+  </div><!-- #page -->
+  {% include js.html %}
+</body>
+</html>

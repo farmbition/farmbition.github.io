@@ -1,0 +1,10 @@
+title: Farmbition
+email: FarmbitionLLC@gmail.com
+description: >-
+  We raise Farmbitious food that works as hard as we do!
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"

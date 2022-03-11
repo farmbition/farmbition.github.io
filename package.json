@@ -1,0 +1,32 @@
+{
+  "name": "esteemedio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "child_process": "^1.0.2",
+    "cssnano": "^5.0.0",
+    "fancy-log": "^2.0.0",
+    "gulp": "^4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.0",
+    "gulp-uglify": "^3.0.2",
+    "postcss": "^8.3.6",
+    "sass": "^1.38.1",
+    "uncss": "^0.17.3"
+  },
+  "scripts": {
+    "build:prod": "JEKYLL_ENV=production npm run gulp:build",
+    "gulp:develop": "gulp",
+    "gulp:build": "gulp build",
+    "htmlProofer": "bundle exec htmlproofer --disable-external ./_site",
+    "test": "npm run htmlProofer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EsteemedIO/esteemedio.github.io.git"
+  },
+  "author": "",
+  "homepage": "https://www.esteemed.io"
+}
